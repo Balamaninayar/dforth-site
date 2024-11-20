@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="assets/dforth-logo 1.svg" alt="Dforth Technologies Logo">
+   
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-item">Home</a></li>
+      <li><a href="#about" class="nav-item">About</a></li>
+      <li><a href="#services" class="nav-item">Services</a></li>
+      <li><a href="#contact" class="nav-item">Contact</a></li>
+    </ul>
+    <a href="#demo" class="btn-demo">Book a Demo</a>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById("navLinks");
+      navLinks.classList.toggle("active");
+      const hamburger = document.getElementById("hamburger");
+      hamburger.classList.toggle("open");
+    }
+  </script>
+</body>
+</html>

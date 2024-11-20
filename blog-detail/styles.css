@@ -1,0 +1,139 @@
+
+.body{
+    margin: 0;
+}
+
+
+.blog-detail-header {
+    background-image: url('/assets/blog-detail/blog-detail-header.svg');
+    width: 100%;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Aligns content to the left */
+    margin: 0 auto;
+
+}
+.brand-article{
+    display: flex;
+    align-items: center;
+}
+.brand-article img{ 
+
+    height: 350px;
+    border-radius: 20px;
+    margin-left: 50px;
+}
+
+.blog-detail-header h1 {
+    font-family: "Helvetica";
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 67.2px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: white;
+    
+}
+.blog-detail-header  p{
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: white;
+    
+}
+.container {
+    margin: 20px 10vw;
+    padding: 20px;
+    background: #fff;
+
+   
+    border-radius: 8px;
+  }
+  
+  header {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-family: "Helvetica";
+    font-size: 42px;
+    font-weight: 700;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+  }
+  
+  section.content {
+    margin-bottom: 30px;
+  }
+  
+  section.content article,
+  section.strategies article {
+    margin-bottom: 40px;
+  }
+  
+  section.content h2,
+  section.strategies h2 {
+    font-family: "Helvetica";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    
+  }
+  
+  section.strategies h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  p {
+    margin-top: 10px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .strategies {
+    margin-top: 40px;
+  }
+  
+  .strategies h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #000;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    header h1 {
+      font-size: 20px;
+    }
+  
+    section.content h2,
+    section.strategies h2 {
+      font-size: 18px;
+    }
+  
+    section.strategies h3 {
+      font-size: 16px;
+    }
+  }
