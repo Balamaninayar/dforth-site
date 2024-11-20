@@ -1,3 +1,4 @@
+
 /* Global Reset */
 * {
     margin: 0;
@@ -64,9 +65,10 @@ html, body {
         font-weight: 400;
         line-height: 28.8px;
         letter-spacing: 0.5px;
-        margin-top: 5px;
+        
         margin-bottom: 20px;
         text-align: center;
+        margin-bottom: 0;
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
     }
@@ -83,6 +85,17 @@ html, body {
     text-decoration-skip-ink: none;
 }
 
+.contact-description{
+    font-family: Inter;
+font-size: 21px;
+font-weight: 400;
+line-height: 31.5px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
 /* Main Body Container */
 .main-body-container {
     display: flex;
@@ -96,15 +109,14 @@ html, body {
 /* Contact Container */
 .contact-container {
     display: flex;
-
-    width: 90%;
-    height: 50vh;
-    min-height: 600px;
-    margin: 0 auto;
-
-    overflow: hidden;
-    box-shadow: 0px 0px 60px 30px rgba(0, 0, 0, 0.08);
-    border-radius: 24px;
+    
+        width: 90%;
+        height: 50vh;
+        min-height: 600px;
+        margin: 0 auto;
+        overflow: hidden;
+        box-shadow: 0px 0px 60px 30px rgba(0, 0, 0, 0.08);
+        border-radius: 24px;
 }
 
 /* Contact Info */
@@ -113,22 +125,47 @@ html, body {
     margin: 20px;
     background: #DCDBFA;
     color: black;
-    padding: 20px 40px;
     border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+.contact-info-content{
+     padding: 20px 40px;
+}
+.ellipse-container{
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: end;
+}
+.ellipse-container img{
+    
+    margin-bottom: 20px;
+
+}
+
+.info-details{
+    margin-top: 40px;
+}
 .info-details-content {
     display: flex;
     align-items: start;
     gap: 15px;
+
     margin-bottom: 15px;
 }
 
-.contact-info p,
 .info-details p {
-    font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 10px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    
 }
 
 /* Contact Form */
@@ -150,14 +187,17 @@ html, body {
 
 .form-group {
     flex: 1;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 15px;
+    
 }
 
 .contact-form label , .services-heading {
     font-family: "Helvetica";
     font-size: 28px;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-align: left;
 
   

@@ -387,6 +387,8 @@ margin-bottom: 20px;
     margin-top: 10px;
     font-size: 14px;
     line-height: 1.6;
+    font-family: Inter;
+    
   }
   
   .footer-social-icons {
@@ -451,6 +453,9 @@ margin-bottom: 20px;
     margin: 0;
   }
   
+  .quick-links{
+    display: flex;
+  }
   .footer-links-bottom a {
     color: #FFFFFF;
     text-decoration: none;
@@ -462,8 +467,8 @@ margin-bottom: 20px;
   }
  /* FAQ Section Styling */
  .faq-section {
-    margin-left: 8vw;
-    margin-right: 8vw;
+    margin-left: 6vw;
+    margin-right: 6vw;
     margin-top: 100px;
     margin-bottom: 100px;
     background-color: #fff;
