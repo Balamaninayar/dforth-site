@@ -1,4 +1,9 @@
 /* Reset and Global Styles */
+
+@font-face {
+  font-family: 'Helvetica';
+  src: URL('/fonts/Helvetica/helveticanowtext-bold-demo.ttf') format('truetype');
+}
 * {
     margin: 0;
     padding: 0;
@@ -6,26 +11,6 @@
     font-family: Arial, sans-serif;
 }
 
-@font-face {
-    font-family: 'Helvetica Now';
-    src: url('../fonts/HelveticaNow-Display-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Helvetica Now';
-    src: url('../fonts/HelveticaNow-Display-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Helvetica Now';
-    src: url('../fonts/HelveticaNow-Text-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
 
 
 /* Navbar Styles */
@@ -72,7 +57,7 @@ text-align: center;
     justify-content: center;
 }
 .stats-title{
-    font-family: 'Helvetica Now';
+    font-family: 'Helvetica';
 font-size: 64px;
 font-weight: 500;
 line-height: 63px;
@@ -86,7 +71,6 @@ text-decoration-skip-ink: none;
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 400;
-    line-height: 32px;
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
@@ -109,7 +93,7 @@ text-decoration-skip-ink: none;
      justify-content: space-around;
 }
 .title{
-    font-family: Helvetica Now Text ;
+    font-family: "Helvetica" ;
 font-size: 56px;
 font-weight: 700;
 line-height: 70px;
@@ -585,16 +569,74 @@ margin-bottom: 20px;
     flex-direction: column;
     justify-content: space-evenly;
   }
-  .card-title{color: #1F2125;
-    font-family: "Helvetica Now Text ";
+  .card-title{
+    color: #1F2125;
+    font-family: "Helvetica";
     font-size: 48px;
     font-style: normal;
-    font-weight: 700;}
-  .help-card-description{
+    font-weight: 700;
+  }
+  .card-description{
     color: #1F2125;
-font-family: Inter;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
 
+    }
+
+  @media  screen and (min-width:1024px) and(max-width: 1550px) {
+
+    
+    .card-title{
+      font-size: 44px;
+    }
+    .card-description{
+
+      font-size: 18px;
+      margin-bottom: 14px;
+    }
+  }
+  @media screen and (min-width: 769px )  and (max-width:1023px) {
+    .card-title{
+      font-size: 40px;
+    }
+    .card-description{
+
+      font-size: 16px;
+      margin-bottom: 14px;
+    }
+    .help-card-section img{
+
+      width: 30vw;
+      
+    }
+  }
+
+
+  @media (max-width: 768px) {
+
+    .help-card-section{
+      height: auto;
+      flex-direction: column-reverse;
+      padding: 30px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+    .help-card-content{
+      flex-direction: column;
+    height: auto;
+    gap: 15px;
+    
+    }
+
+    .card-title{
+      font-size: 24px;
+    }
+    .card-description{
+
+      font-size: 14px;
+      margin-bottom: 14px;
+    }
+   
   }
