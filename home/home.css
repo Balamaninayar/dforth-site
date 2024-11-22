@@ -343,20 +343,19 @@ margin-bottom: 20px;
 
 
 
+
    /* Footer Styles */
    .footer {
     background-color: #1C2236;
     color: #FFFFFF;
     padding: 40px;
-    font-family: Arial, sans-serif;
   }
   
   .footer-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 8vw;
-    padding-right: 8vw;
+   
   }
   
   .footer-about {
@@ -371,8 +370,6 @@ margin-bottom: 20px;
     margin-top: 10px;
     font-size: 14px;
     line-height: 1.6;
-    font-family: Inter;
-    
   }
   
   .footer-social-icons {
@@ -437,9 +434,6 @@ margin-bottom: 20px;
     margin: 0;
   }
   
-  .quick-links{
-    display: flex;
-  }
   .footer-links-bottom a {
     color: #FFFFFF;
     text-decoration: none;
