@@ -396,7 +396,23 @@ text-decoration-skip-ink: none;
     .blog-grid {
       grid-template-columns: repeat(2, 1fr); /* Fixed two-column layout */
       gap: 10px; 
+    }
+  }
+  
+  @media (min-width: 993px)  and (max-width:1330px) {
+    .blog-card{
+
+      flex-direction: column-reverse;
+      margin-bottom: 30px;
       
+    }
+
+    .blog-card img{
+      height: auto;
+    }
+    .blog-content{
+      gap: 20px;
+      padding-top: 20px;
     }
   }
   
